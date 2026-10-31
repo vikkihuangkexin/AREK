@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+outputs/
+databases/
+*.lock
+# Small public real-read validation fixtures and curated validation evidence are intentional payloads.

@@ -1,0 +1,9 @@
+parameter	fixed_historical_value	meaning
+alpha_log_base	e	natural logarithm
+simpson_variant	1-D	1-sum(p^2)
+chao1_variant	S+f1*(f1-1)/(2*(f2+1))	integer counts only
+clr_pseudocount	0.5	added in the selected matrix unit
+clr_log_base	e	natural logarithm
+rarefaction	none	no depth or iterations
+beta_metrics	BrayCurtis,Jaccard,Aitchison	from historical Python implementation
+pcoa_fraction_denominator	positive_eigenvalue_sum	negative eigenvalues exported separately

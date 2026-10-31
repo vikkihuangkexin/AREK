@@ -1,0 +1,2 @@
+dataset_id	sample_id	run_id	specimen_id	subject_id	layout	r1	r2
+PRJCA021196	CRR1000215	CRR1000215			PE	user_fastq/CRR1000215_1.fastq.gz	user_fastq/CRR1000215_2.fastq.gz

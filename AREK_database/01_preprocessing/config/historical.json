@@ -1,0 +1,84 @@
+{
+  "threads": 2,
+  "memory_gb": 8,
+  "min_free_disk_gb": 1,
+  "route": "matrix",
+  "layout": "SE",
+  "classifier": "",
+  "levels": [
+    "Domain",
+    "Kingdom",
+    "Phylum",
+    "Class",
+    "Order",
+    "Family",
+    "Genus",
+    "Species"
+  ],
+  "metadata": "",
+  "samples": "",
+  "matrix": "",
+  "taxonomy": "",
+  "native_level": "",
+  "matrix_unit": "counts",
+  "amplicon": {
+    "identity": 0.97,
+    "min_median_length": 100,
+    "merge_min_overlap": 10,
+    "merge_max_differences": 10,
+    "merge_min_length": 1,
+    "min_seq_length": 1,
+    "min_unique_size": 1,
+    "uchime_dn": 1.4,
+    "uchime_mindiffs": 3,
+    "uchime_mindiv": 0.8,
+    "uchime_minh": 0.28,
+    "uchime_xn": 8.0,
+    "classification_confidence": 0.7,
+    "read_orientation": "auto"
+  },
+  "shotgun": {
+    "variant": "v2",
+    "fastp_threads": 2,
+    "min_length": 50,
+    "compression": 1,
+    "correction": false,
+    "disable_duplication_eval": true,
+    "skip_host_removal": false,
+    "host_index": "",
+    "sort_memory": "512M",
+    "kraken_db": "",
+    "confidence": 0.0,
+    "read_length": 150,
+    "bracken_threshold": 10,
+    "ranks": [
+      "P",
+      "F",
+      "G",
+      "S"
+    ]
+  },
+  "abundance": {
+    "min_prevalence": 0.1,
+    "min_mean_relative": 0.0001,
+    "relative_tolerance": 1e-06
+  },
+  "diversity": {
+    "input": "filtered_counts",
+    "group_column": "",
+    "subject_column": "",
+    "block_column": "",
+    "covariates": [],
+    "design": "descriptive",
+    "permutations": 999,
+    "seed": 1,
+    "missing_group_values": [
+      "",
+      "NA",
+      "Unknown",
+      "unknown",
+      "未明确",
+      "未恢复"
+    ]
+  }
+}

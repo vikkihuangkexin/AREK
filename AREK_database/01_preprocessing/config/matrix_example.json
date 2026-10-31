@@ -1,0 +1,16 @@
+{
+  "route": "matrix",
+  "matrix": "../examples/matrix/counts.tsv",
+  "taxonomy": "../examples/matrix/taxonomy.tsv",
+  "matrix_unit": "counts",
+  "levels": [
+    "Phylum",
+    "Genus",
+    "Species"
+  ],
+  "memory_gb": 1,
+  "diversity": {
+    "design": "descriptive",
+    "permutations": 99
+  }
+}

@@ -1,0 +1,5 @@
+dataset_id	sample_id	run_id	specimen_id	subject_id	layout	r1	r2
+PRJDB10075	DRR234531	DRR234531			PE	real_fastq/PRJDB10075/DRR234531_1.fastq.gz	real_fastq/PRJDB10075/DRR234531_2.fastq.gz
+PRJDB10075	DRR234532	DRR234532			PE	real_fastq/PRJDB10075/DRR234532_1.fastq.gz	real_fastq/PRJDB10075/DRR234532_2.fastq.gz
+PRJDB10075	DRR234533	DRR234533			PE	real_fastq/PRJDB10075/DRR234533_1.fastq.gz	real_fastq/PRJDB10075/DRR234533_2.fastq.gz
+PRJDB10075	DRR234534	DRR234534			PE	real_fastq/PRJDB10075/DRR234534_1.fastq.gz	real_fastq/PRJDB10075/DRR234534_2.fastq.gz

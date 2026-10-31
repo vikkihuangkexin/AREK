@@ -1,0 +1,10 @@
+route	entry	layouts	start	end	verification_scope
+amplicon_vsearch97	run_pipeline.py;workflow/routes.py:amplicon	SE,PE	base-space FASTQ	OTU97;taxonomy;applicable levels;alpha/beta/gamma/statistics/plots	real PRJDB10075 PE subset and explicit R1-SE chain
+shotgun_kraken_bracken:v2	run_pipeline.py;workflow/routes.py:shotgun	PE	base-space FASTQ	fastp;Bowtie2;Kraken2;independent Bracken P/F/G/S;diversity	parameter/source/dependency/database checks; no full rerun
+shotgun_kraken_bracken:original	run_pipeline.py;workflow/routes.py:shotgun	SE,PE	base-space FASTQ	original fastp/host flags;Kraken2;Bracken;diversity	source restoration; unexecuted branch
+matrix	run_pipeline.py	feature x sample	counts or complete 0-1 relative matrix	applicable/native level;diversity	real matrix and relative-only validation
+integrated_existing_genus	legacy/pooled_diversity/integrated_diversity.R	feature x sample	existing verified merged Genus matrices	original integrated diversity	actual legacy result evidence; no full merged-cohort rerun
+legacy_selected_se_batch	legacy/amplicon/selected_se_batch.sh	selected SE	explicit historical biological mate	batched derep+OTU97+taxonomy	source+syntax only; isolated research mode; not canonical resume
+legacy_PRJCA022064	legacy/amplicon/PRJCA022064.sh	SE,PE with special suffixes	FASTQ	OTU97+taxonomy	source+syntax only; not canonical resume
+SOLiD_diagnostic	legacy/solid/prepare_colorspace.sh	SOLiD SE color-space	colorspace FASTQ	diagnostic only	legacy evidence; not run this release
+SOLiD_BFAST_host	legacy/solid/host_filter_chunked.sh	SOLiD SE color-space	colorspace FASTQ	hg38 color-space host removal only	legacy small test evidence; no downstream biological full-chain claim

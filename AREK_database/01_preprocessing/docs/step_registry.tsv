@@ -1,0 +1,10 @@
+step_id	step_name	cli_command_or_stage	source_modules	inputs	outputs
+00	discovery	scan	workflow/scanner.py	FASTQ directory	sample candidates; pairing conflicts
+01	preflight	check;dry-run	workflow/cli.py	config; manifest; databases	checks; execution plan
+02	read_processing	preprocess	workflow/routes.py;scripts/preprocess/host_filter.sh	explicit PE/SE FASTQ	QIIME2 filtered artifacts or per-sample shotgun reports
+03	feature_tables	features	workflow/routes.py;workflow/cli.py;scripts/abundance/historical_bracken_merge.py	filtered artifacts; Bracken reports; existing matrix	feature tables or native-rank matrices
+04	taxonomy	taxonomy	workflow/routes.py	amplicon representative sequences; classifier	taxonomy QZA and TSV
+05	taxonomic_abundance	levels	scripts/abundance/levels.py	features and taxonomy or native-level matrix	counts; relative; filtering and mass-balance audits
+06	diversity_and_statistics	diversity	scripts/diversity/compute.py;scripts/diversity/statistics.R	selected level matrix; metadata	alpha; distance; PCoA; gamma; tests; audits
+07	visualization	plot;redraw	scripts/diversity/plot.py	diversity TSV files	PDF; PNG; captions
+08	verification	validate	workflow/cli.py;workflow/common.py	existing output; original inputs and configuration	content and fingerprint validation

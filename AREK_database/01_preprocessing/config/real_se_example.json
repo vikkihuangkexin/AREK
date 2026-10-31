@@ -1,0 +1,15 @@
+{
+  "route": "amplicon_vsearch97",
+  "layout": "SE",
+  "samples": "../examples/real_se_samples.tsv",
+  "classifier": "../databases/silva-138-99-nb-classifier.qza",
+  "threads": 2,
+  "memory_gb": 8,
+  "levels": [
+    "Genus"
+  ],
+  "diversity": {
+    "design": "descriptive",
+    "permutations": 99
+  }
+}

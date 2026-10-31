@@ -1,0 +1,3 @@
+sample_id	group	subject_id	study	host_species	body_site	age	sex
+RUN_A	ALCOHOL	SUBJECT_1	PRJ_EXPLICIT	Homo sapiens	stool	40	M
+RUN_B		SUBJECT_2	PRJ_EXPLICIT	Homo sapiens	stool	35	F

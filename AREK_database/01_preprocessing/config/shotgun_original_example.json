@@ -1,0 +1,23 @@
+{
+  "route": "shotgun_kraken_bracken",
+  "layout": "PE",
+  "samples": "../examples/shotgun_samples.tsv",
+  "levels": [
+    "Phylum",
+    "Family",
+    "Genus",
+    "Species"
+  ],
+  "shotgun": {
+    "variant": "original",
+    "kraken_db": "../databases/kraken",
+    "host_index": "../databases/hg38/hg38",
+    "correction": true,
+    "compression": 4,
+    "disable_duplication_eval": false
+  },
+  "diversity": {
+    "input": "filtered_counts",
+    "design": "descriptive"
+  }
+}

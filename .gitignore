@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+AREK_database/**/outputs/
+AREK_database/**/databases/
+AREK_database/**/validation/work/

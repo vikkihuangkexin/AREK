@@ -1,0 +1,66 @@
+[
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234531",
+    "mate": 1,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234531_1.fastq.gz",
+    "subset_sha256": "0a4173e9e5654ed67cbca84dcf4dc5f9425b47973fb19f98e37a4c6ebc81ec04"
+  },
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234531",
+    "mate": 2,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234531_2.fastq.gz",
+    "subset_sha256": "15e23287b9f0c6af472cb0bbeaca9ef2ad1a0cd3bf7f596ad70c460bef43ac84"
+  },
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234532",
+    "mate": 1,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234532_1.fastq.gz",
+    "subset_sha256": "69f5e8682389a17a13352fcc9a055e954bd78b04869ee8d1ab40ee9c5e2fb37a"
+  },
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234532",
+    "mate": 2,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234532_2.fastq.gz",
+    "subset_sha256": "7c90f44ffe4b0dedacb3800b44548e46974706d8a28b6cacf3e868a40294857d"
+  },
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234533",
+    "mate": 1,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234533_1.fastq.gz",
+    "subset_sha256": "79ddc534d885c928bea2946d488f78f4e854577d71f83a0c4aecb3fa8e7d44be"
+  },
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234533",
+    "mate": 2,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234533_2.fastq.gz",
+    "subset_sha256": "65a3e11433544beea49158f252e37bfd6964d90cc80b1f211885bc842f983ad4"
+  },
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234534",
+    "mate": 1,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234534_1.fastq.gz",
+    "subset_sha256": "c00d21ee2fff40e765d2c8f3284f685784efc8037fcb971cd5454e9becbd3f03"
+  },
+  {
+    "dataset": "PRJDB10075",
+    "run_id": "DRR234534",
+    "mate": 2,
+    "subset": "first 2000 complete original FASTQ records recovered from imported raw QZA; no synthetic reads",
+    "subset_path": "examples/real_fastq/PRJDB10075/DRR234534_2.fastq.gz",
+    "subset_sha256": "80814830d8350130c261d493df69c0cf059fad7fa8facdd74149aa3555afb8c4"
+  }
+]

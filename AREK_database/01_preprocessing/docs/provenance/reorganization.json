@@ -1,0 +1,14 @@
+{
+  "source_archive": "AREK_FASTQ_to_Abundance_Diversity_pipeline_20261030.zip",
+  "source_archive_sha256": "b13dcf70c96d760df1b792f522892b14fc12a8db304237cdefd1f28b6e0bf9f6",
+  "source_files": 847,
+  "date_America_Chicago": "2026-10-31",
+  "module_root": "AREK_database/01_preprocessing",
+  "source_mapping": "file_relocation.tsv (retained source files only)",
+  "method_changes": "none; canonical computation sources copied byte-for-byte",
+  "validation_program_changes": "write new evidence to supplied work root instead of tracked source tree",
+  "excluded": "All historical logs, checkpoints, validation result snapshots, cohort/result inventories, intermediate QZA/BIOM files and project scans remain solely in the original input archive.",
+  "source_files_retained": 66,
+  "source_files_not_uploaded": 781,
+  "documentation_changes": "Source execution paths omitted from database inventory and script map; all legacy route paths updated."
+}
