@@ -1,0 +1,12 @@
+tool	version	role	validation
+bash	SYSTEM	original source adapters	SYNTAX_ONLY
+python	3.11.13	profile workflow	EXECUTED
+Rscript	4.4.2	beta/PAM	EXECUTED
+qiime	NOT_RECOVERED	original 16S	BLOCKED
+biom	NOT_RECOVERED	16S export	BLOCKED
+fastp	NOT_RECOVERED	shotgun QC	BLOCKED
+bowtie2	NOT_RECOVERED	original hg38 filter	NOT_RUN
+samtools	NOT_RECOVERED	original host filter	NOT_RUN
+pigz	NOT_RECOVERED	shotgun compression	NOT_RUN
+kraken2	NOT_RECOVERED	shotgun taxonomy	BLOCKED
+bracken	NOT_RECOVERED	estimated rank reads	BLOCKED

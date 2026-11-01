@@ -1,0 +1,749 @@
+[
+  {
+    "variable": "age",
+    "kind": "continuous",
+    "label": "age",
+    "unit": "years",
+    "reference": null,
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "age_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 50.0,
+    "scale": 10.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "age",
+    "kind": "continuous",
+    "label": "age",
+    "unit": "years",
+    "reference": null,
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "age_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 50.0,
+    "scale": 10.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": []
+  },
+  {
+    "variable": "age",
+    "kind": "continuous",
+    "label": "age",
+    "unit": "years",
+    "reference": null,
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "age_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 50.0,
+    "scale": 10.0,
+    "body": "oral",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "sex",
+    "kind": "categorical",
+    "label": "sex",
+    "unit": "reported sex",
+    "reference": "female",
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "sex_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": [
+      "female",
+      "male"
+    ]
+  },
+  {
+    "variable": "sex",
+    "kind": "categorical",
+    "label": "sex",
+    "unit": "reported sex",
+    "reference": "female",
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "sex_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": [
+      "female",
+      "male"
+    ]
+  },
+  {
+    "variable": "sex",
+    "kind": "categorical",
+    "label": "sex",
+    "unit": "reported sex",
+    "reference": "female",
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "sex_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "oral",
+    "scope": "frozen",
+    "levels": [
+      "female",
+      "male"
+    ]
+  },
+  {
+    "variable": "BMI",
+    "kind": "continuous",
+    "label": "BMI",
+    "unit": "kg/m\u00b2",
+    "reference": null,
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "BMI_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 25.0,
+    "scale": 5.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "BMI",
+    "kind": "continuous",
+    "label": "BMI",
+    "unit": "kg/m\u00b2",
+    "reference": null,
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "BMI_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 25.0,
+    "scale": 5.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": []
+  },
+  {
+    "variable": "BMI",
+    "kind": "continuous",
+    "label": "BMI",
+    "unit": "kg/m\u00b2",
+    "reference": null,
+    "priority": "prespecified",
+    "exclusion": null,
+    "source_columns": [
+      "BMI_model"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 25.0,
+    "scale": 5.0,
+    "body": "oral",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "smoking_status",
+    "kind": "categorical",
+    "label": "smoking status",
+    "unit": "category",
+    "reference": "never",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "legacy_original__server_original__Smoking_status",
+      "legacy_original__smoking",
+      "legacy_original__wb_original__Original: host_smoke",
+      "legacy_original__wb_original__Smoking status",
+      "repository_original__host smoke",
+      "repository_original__smoking_status"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "oral",
+    "scope": "frozen",
+    "levels": [
+      "current",
+      "former",
+      "never"
+    ]
+  },
+  {
+    "variable": "smoking_current",
+    "kind": "categorical",
+    "label": "smoking current",
+    "unit": "category",
+    "reference": "no",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "legacy_original__cmd_smoker",
+      "repository_original__smoker",
+      "smoker"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "variable": "smoking_current",
+    "kind": "categorical",
+    "label": "smoking current",
+    "unit": "category",
+    "reference": "no",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "legacy_original__cmd_smoker",
+      "repository_original__smoker",
+      "smoker"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "variable": "smoking_ever",
+    "kind": "categorical",
+    "label": "smoking ever",
+    "unit": "category",
+    "reference": "no",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "ever_smoker",
+      "legacy_original__cmd_ever_smoker",
+      "legacy_original__server_original__Smoking_status",
+      "legacy_original__smoking",
+      "legacy_original__wb_original__Original: host_smoke",
+      "legacy_original__wb_original__Smoking status",
+      "repository_original__ever_smoker",
+      "repository_original__host smoke",
+      "repository_original__smoking_status"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "variable": "smoking_ever",
+    "kind": "categorical",
+    "label": "smoking ever",
+    "unit": "category",
+    "reference": "no",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "ever_smoker",
+      "legacy_original__cmd_ever_smoker",
+      "legacy_original__server_original__Smoking_status",
+      "legacy_original__smoking",
+      "legacy_original__wb_original__Original: host_smoke",
+      "legacy_original__wb_original__Smoking status",
+      "repository_original__ever_smoker",
+      "repository_original__host smoke",
+      "repository_original__smoking_status"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "variable": "race",
+    "kind": "categorical",
+    "label": "race",
+    "unit": "category",
+    "reference": "White",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "legacy_original__wb_original__Original: host_race",
+      "legacy_original__wb_original__Race",
+      "repository_original__host race"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "oral",
+    "scope": "frozen",
+    "levels": [
+      "Non-White",
+      "White"
+    ]
+  },
+  {
+    "variable": "zygosity",
+    "kind": "categorical",
+    "label": "zygosity",
+    "unit": "category",
+    "reference": "dizygotic",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "repository_original__zigosity"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": [
+      "dizygotic",
+      "monozygotic"
+    ]
+  },
+  {
+    "variable": "zygosity",
+    "kind": "categorical",
+    "label": "zygosity",
+    "unit": "category",
+    "reference": "dizygotic",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "repository_original__zigosity"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": [
+      "dizygotic",
+      "monozygotic"
+    ]
+  },
+  {
+    "variable": "albumin",
+    "kind": "continuous",
+    "label": "albumin",
+    "unit": "g/L",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Qin_S1:Alb (g/L)",
+      "legacy_original__albumin",
+      "legacy_original__cmd_albumine",
+      "repository_original__albumine"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 43.5,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "creatinine",
+    "kind": "continuous",
+    "label": "creatinine",
+    "unit": "\u00b5mol/L",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Qin_S1:Crea (umol/L)",
+      "legacy_original__cmd_creatine",
+      "repository_original__creatine"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 63.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "creatinine",
+    "kind": "continuous",
+    "label": "creatinine",
+    "unit": "\u00b5mol/L",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Qin_S1:Crea (umol/L)",
+      "legacy_original__cmd_creatine",
+      "repository_original__creatine"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 64.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": []
+  },
+  {
+    "variable": "INR",
+    "kind": "continuous",
+    "label": "INR",
+    "unit": "ratio",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Qin_S1:INR",
+      "legacy_original__INR",
+      "legacy_original__cmd_inr",
+      "repository_original__inr"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 1.28,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "prothrombin_time",
+    "kind": "continuous",
+    "label": "prothrombin time",
+    "unit": "seconds",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Qin_S1:PT (S)",
+      "legacy_original__cmd_prothrombin_time",
+      "repository_original__prothrombin_time"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 14.7,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "systolic_pressure",
+    "kind": "continuous",
+    "label": "systolic pressure",
+    "unit": "mmHg",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Systolic",
+      "legacy_original__cmd_systolic_p",
+      "repository_original__systolic_p"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 132.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "systolic_pressure",
+    "kind": "continuous",
+    "label": "systolic pressure",
+    "unit": "mmHg",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Systolic",
+      "legacy_original__cmd_systolic_p",
+      "repository_original__systolic_p"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 132.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": []
+  },
+  {
+    "variable": "diastolic_pressure",
+    "kind": "continuous",
+    "label": "diastolic pressure",
+    "unit": "mmHg",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Diastolic",
+      "legacy_original__cmd_dyastolic_p",
+      "repository_original__dyastolic_p"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 80.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "diastolic_pressure",
+    "kind": "continuous",
+    "label": "diastolic pressure",
+    "unit": "mmHg",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Diastolic",
+      "legacy_original__cmd_dyastolic_p",
+      "repository_original__dyastolic_p"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 80.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": []
+  },
+  {
+    "variable": "WHO5_raw",
+    "kind": "continuous",
+    "label": "WHO5 raw",
+    "unit": "author raw score",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:WHO_5_Raw_Score"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 14.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "WHO5_raw",
+    "kind": "continuous",
+    "label": "WHO5 raw",
+    "unit": "author raw score",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:WHO_5_Raw_Score"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 14.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": []
+  },
+  {
+    "variable": "siblings",
+    "kind": "continuous",
+    "label": "siblings",
+    "unit": "count",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Siblings"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 9.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": []
+  },
+  {
+    "variable": "siblings",
+    "kind": "continuous",
+    "label": "siblings",
+    "unit": "count",
+    "reference": null,
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Siblings"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 9.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": []
+  },
+  {
+    "variable": "pet_ownership",
+    "kind": "categorical",
+    "label": "pet ownership",
+    "unit": "author code",
+    "reference": "0",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Pet_Ownership"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": [
+      "0",
+      "1"
+    ]
+  },
+  {
+    "variable": "pet_ownership",
+    "kind": "categorical",
+    "label": "pet ownership",
+    "unit": "author code",
+    "reference": "0",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Pet_Ownership"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": [
+      "0",
+      "1"
+    ]
+  },
+  {
+    "variable": "toilet",
+    "kind": "categorical",
+    "label": "toilet",
+    "unit": "category",
+    "reference": "Inside_Home",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Communal_Toilet_Facilities"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": [
+      "Inside_Home",
+      "Outside_Home"
+    ]
+  },
+  {
+    "variable": "toilet",
+    "kind": "categorical",
+    "label": "toilet",
+    "unit": "category",
+    "reference": "Inside_Home",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Communal_Toilet_Facilities"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": [
+      "Inside_Home",
+      "Outside_Home"
+    ]
+  },
+  {
+    "variable": "childhood_toilet",
+    "kind": "categorical",
+    "label": "childhood toilet",
+    "unit": "category",
+    "reference": "Inside_Home",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Childhood_WC_Facilities"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "frozen",
+    "levels": [
+      "Inside_Home",
+      "Outside_Home"
+    ]
+  },
+  {
+    "variable": "childhood_toilet",
+    "kind": "categorical",
+    "label": "childhood toilet",
+    "unit": "category",
+    "reference": "Inside_Home",
+    "priority": "exploratory",
+    "exclusion": null,
+    "source_columns": [
+      "author_Keohane_S1A:Childhood_WC_Facilities"
+    ],
+    "time_window": "at_sampling_or_prior_as_reported",
+    "center": 0.0,
+    "scale": 1.0,
+    "body": "gut",
+    "scope": "exclude_explicit_disease_references",
+    "levels": [
+      "Inside_Home",
+      "Outside_Home"
+    ]
+  }
+]

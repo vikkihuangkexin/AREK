@@ -1,0 +1,23 @@
+module	status	validated_work	boundary
+01	PASS	Schema/hash checks and population identity recomputed.	Raw-stage execution not validated.
+02	PASS	Accepted exact-ID evidence reconstructed; technical metadata reused/hash-checked.	No live metadata acquisition or group fill.
+03	BLOCKED	Included recovered QC adapters; syntax and expected blocked preflight tested.	Reads, matching databases and complete tool environment unavailable.
+04	BLOCKED	Included real mate-aware QIIME2/VSEARCH OTU implementation.	No original raw-read execution.
+05	BLOCKED	Included real fastp/host/Kraken2/Bracken implementation.	No original raw-read execution.
+06	PASS_PARTIAL	Frozen genus abundance exported/hash-checked.	Optional rank aggregation not exhaustively replayed.
+07	PASS	V3 source canonical integration and CLR rebuilt; frozen selection retained.	No raw-read profiling.
+08	PASS	Frozen memberships retained; population and availability counts recomputed.	Labels not re-inferred.
+09	PASS	V3 source-composition alpha and primary M1 recomputed.	Without V3 measures are reused; other nodes not exhaustively replayed.
+10	PASS_SPECIFIED_NODES	Primary shared-7 actual 9999-permutation beta; supplemented 16S gate preserved.	Other panels/scopes NOT_RUN; supplemented gate has zero permutations.
+11	PASS	Primary full 3201 reference rows refitted; selected360/estimable182/candidates39.	Frozen model inputs reused, not raw reads.
+12	PASS_SPECIFIED_NODES	All four primary gut disease nodes refitted.	Other panel/scope combinations NOT_RUN.
+13	PASS_SPECIFIED_NODES	Original and supplemented primary gut complete-case M1 refitted.	Not a clinical-adjusted model.
+14	PASS	All406 clinical nodes and independent sex branch refitted.	Clinical input evidence is frozen; partial joint BH withheld.
+15	PASS_SPECIFIED_NODES	Primary gut taxa/functions withinStudy/LOSO robustness refitted.	Other disease/panel/scope nodes NOT_RUN.
+16	PASS_PARTIAL	Accepted official mapper states reused/hash-checked; source contributions freshly computed.	Official mapper execution NOT_RUN; optional package pins missing.
+17	PASS_SPECIFIED_NODES	Primary base/global/trait function M1 and sex/function clinical node refitted.	Independent-variable joint BH withheld; other new branches NOT_RUN.
+18	PASS	Original-scale candidate per-ID contributions freshly summed and checked.	Annotation is inferred, not measured function.
+19	PASS_SPECIFIED_NODES	Original ALD/Alcohol shared-7 PAM/bootstraps replayed; supplemented18-unit gate preserved.	Supplemented gate has zero bootstrap attempts; other nodes NOT_RUN.
+20	PASS	Canonical overlaps and counts recomputed from frozen result tables.	Does not refit source statistics.
+21	PASS	Eight principal SVG/data pairs freshly plotted from actual frozen results.	No statistical refit or narrative revision.
+22	PASS	HTML reconstructed preserving16slides,565editableIDs,narrative/runtime/assets.	No standalone PPTX/PDF; original narrative reused unchanged.

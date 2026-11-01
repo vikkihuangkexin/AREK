@@ -1,0 +1,18 @@
+{
+  "adapter": "shotgun_v2",
+  "project": "PRJNA613834",
+  "RAW_ROOT": "external/raw/PRJNA613834",
+  "OUT_ROOT": "run/05",
+  "MISS_ROOT": "run/05/missing",
+  "KRAKEN_DB": "external/db/kraken",
+  "HOST_BT2_DB": "external/db/hg38/hg38",
+  "settings": {
+    "THREADS": 1,
+    "FASTP_THREADS": 1,
+    "BOWTIE2_THREADS": 1,
+    "KRAKEN_THREADS": 1,
+    "SAMTOOLS_THREADS": 1,
+    "PIGZ_THREADS": 1,
+    "FORCE": 0
+  }
+}

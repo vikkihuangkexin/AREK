@@ -1,0 +1,850 @@
+[
+  {
+    "module": "02",
+    "check": "scientific_replay",
+    "label": "metadata",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 6.491897961999939,
+    "command": [
+      "python",
+      "${AC}/scripts/02_collect_harmonize_metadata.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/metadata"
+    ],
+    "log": "${VALIDATION_OUT}/full/metadata.log"
+  },
+  {
+    "module": "06",
+    "check": "scientific_replay",
+    "label": "rank_export",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 10.182165924999936,
+    "command": [
+      "python",
+      "${AC}/scripts/06_build_taxonomic_abundance.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/rank_export"
+    ],
+    "log": "${VALIDATION_OUT}/full/rank_export.log"
+  },
+  {
+    "module": "08",
+    "check": "scientific_replay",
+    "label": "membership",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 1.5596844060000876,
+    "command": [
+      "python",
+      "${AC}/scripts/08_define_comparisons.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/membership"
+    ],
+    "log": "${VALIDATION_OUT}/full/membership.log"
+  },
+  {
+    "module": "14",
+    "check": "scientific_replay",
+    "label": "clinical_full",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 202.27955600600012,
+    "command": [
+      "python",
+      "${AC}/scripts/14_clinical_interactions.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/clinical_full",
+      "--variable",
+      "all",
+      "--panel",
+      "all"
+    ],
+    "log": "${VALIDATION_OUT}/full/clinical_full.log"
+  },
+  {
+    "module": "14",
+    "check": "scientific_replay",
+    "label": "clinical_single",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 5.123017175999848,
+    "command": [
+      "python",
+      "${AC}/scripts/14_clinical_interactions.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/clinical_single",
+      "--variable",
+      "sex",
+      "--body",
+      "gut",
+      "--scope",
+      "frozen",
+      "--outcome",
+      "taxa",
+      "--panel",
+      "gut__full_source_reference",
+      "--coverage",
+      "base"
+    ],
+    "log": "${VALIDATION_OUT}/full/clinical_single.log"
+  },
+  {
+    "module": "15",
+    "check": "scientific_replay",
+    "label": "source_main",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 51.39844769299998,
+    "command": [
+      "python",
+      "${AC}/scripts/15_source_robustness.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/source_main"
+    ],
+    "log": "${VALIDATION_OUT}/full/source_main.log"
+  },
+  {
+    "module": "15",
+    "check": "scientific_replay",
+    "label": "source_function",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 28.376924616999986,
+    "command": [
+      "python",
+      "${AC}/scripts/15_source_robustness.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/source_function",
+      "--outcome",
+      "function"
+    ],
+    "log": "${VALIDATION_OUT}/full/source_function.log"
+  },
+  {
+    "module": "18",
+    "check": "scientific_replay",
+    "label": "contributions",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 9.645922402999986,
+    "command": [
+      "python",
+      "${AC}/scripts/18_taxon_function_contributions.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/contributions"
+    ],
+    "log": "${VALIDATION_OUT}/full/contributions.log"
+  },
+  {
+    "module": "10",
+    "check": "scientific_replay",
+    "label": "beta_shared",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 221.35911966899994,
+    "command": [
+      "python",
+      "${AC}/scripts/10_beta_diversity.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/beta_shared"
+    ],
+    "log": "${VALIDATION_OUT}/full/beta_shared.log"
+  },
+  {
+    "module": "19",
+    "check": "scientific_replay",
+    "label": "PAM_ALD",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 18.592673311000226,
+    "command": [
+      "python",
+      "${AC}/scripts/19_patient_patterns.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/PAM_ALD"
+    ],
+    "log": "${VALIDATION_OUT}/full/PAM_ALD.log"
+  },
+  {
+    "module": "19",
+    "check": "scientific_replay",
+    "label": "PAM_Alcohol",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 178.9288183509998,
+    "command": [
+      "python",
+      "${AC}/scripts/19_patient_patterns.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/PAM_Alcohol",
+      "--comparison",
+      "01_Alcohol_vs_Health"
+    ],
+    "log": "${VALIDATION_OUT}/full/PAM_Alcohol.log"
+  },
+  {
+    "module": "16",
+    "check": "scientific_replay",
+    "label": "annotation",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 4.859102666999661,
+    "command": [
+      "python",
+      "${AC}/scripts/16_functional_annotation.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/annotation",
+      "--source-root",
+      "${V2}"
+    ],
+    "log": "${VALIDATION_OUT}/full/annotation.log"
+  },
+  {
+    "module": "01",
+    "check": "scientific_replay",
+    "label": "audit",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 5.040700931000174,
+    "command": [
+      "python",
+      "${AC}/scripts/01_audit_inputs.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/audit",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/audit.log"
+  },
+  {
+    "module": "07",
+    "check": "scientific_replay",
+    "label": "profile",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 42.20583048699973,
+    "command": [
+      "python",
+      "${AC}/scripts/07_harmonize_profiles.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/profile",
+      "--source-root",
+      "${V3}",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/profile.log"
+  },
+  {
+    "module": "09",
+    "check": "scientific_replay",
+    "label": "alpha",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 4.697805195000001,
+    "command": [
+      "python",
+      "${AC}/scripts/09_alpha_diversity.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/alpha",
+      "--source-root",
+      "${V3}",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/alpha.log"
+  },
+  {
+    "module": "11",
+    "check": "scientific_replay",
+    "label": "main",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 6.652134689999912,
+    "command": [
+      "python",
+      "${AC}/scripts/11_alcohol_vs_health_M1.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/main",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/main.log"
+  },
+  {
+    "module": "17",
+    "check": "scientific_replay",
+    "label": "function_base",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 2.098150030999932,
+    "command": [
+      "python",
+      "${AC}/scripts/17_functional_comparisons.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/function_base",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/function_base.log"
+  },
+  {
+    "module": "17",
+    "check": "scientific_replay",
+    "label": "function_global",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 2.1931871339997997,
+    "command": [
+      "python",
+      "${AC}/scripts/17_functional_comparisons.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/function_global",
+      "--coverage",
+      "global_coverage",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/function_global.log"
+  },
+  {
+    "module": "17",
+    "check": "scientific_replay",
+    "label": "function_trait",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 4.806416280000121,
+    "command": [
+      "python",
+      "${AC}/scripts/17_functional_comparisons.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/function_trait",
+      "--coverage",
+      "trait_coverage",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/function_trait.log"
+  },
+  {
+    "module": "20",
+    "check": "scientific_replay",
+    "label": "overlaps",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 3.1920899980000286,
+    "command": [
+      "python",
+      "${AC}/scripts/20_candidate_overlap.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/overlaps",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/overlaps.log"
+  },
+  {
+    "module": "21",
+    "check": "scientific_replay",
+    "label": "figures",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 5.945166351000353,
+    "command": [
+      "python",
+      "${AC}/scripts/21_make_figures.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/figures",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/figures.log"
+  },
+  {
+    "module": "22",
+    "check": "scientific_replay",
+    "label": "presentation",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 1.1282098800002132,
+    "command": [
+      "python",
+      "${AC}/scripts/22_build_presentation.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/presentation",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/presentation.log"
+  },
+  {
+    "module": "12",
+    "check": "scientific_replay",
+    "label": "disease_1",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 4.335100908999721,
+    "command": [
+      "python",
+      "${AC}/scripts/12_disease_comparisons_M1.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/disease_1",
+      "--comparison",
+      "02_AUD_or_ALD_vs_Health",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/disease_1.log"
+  },
+  {
+    "module": "12",
+    "check": "scientific_replay",
+    "label": "disease_2",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 4.053415296999901,
+    "command": [
+      "python",
+      "${AC}/scripts/12_disease_comparisons_M1.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/disease_2",
+      "--comparison",
+      "03_AUD_vs_Health",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/disease_2.log"
+  },
+  {
+    "module": "12",
+    "check": "scientific_replay",
+    "label": "disease_3",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 3.6631051190001926,
+    "command": [
+      "python",
+      "${AC}/scripts/12_disease_comparisons_M1.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/disease_3",
+      "--comparison",
+      "04_ALD_vs_Health",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/disease_3.log"
+  },
+  {
+    "module": "12",
+    "check": "scientific_replay",
+    "label": "disease_4",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 3.367336738999711,
+    "command": [
+      "python",
+      "${AC}/scripts/12_disease_comparisons_M1.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/disease_4",
+      "--comparison",
+      "05_ALD_vs_non_ALD",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/disease_4.log"
+  },
+  {
+    "module": "01",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8021624689999953,
+    "command": [
+      "python",
+      "${AC}/scripts/01_audit_inputs.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "02",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8381495499997982,
+    "command": [
+      "python",
+      "${AC}/scripts/02_collect_harmonize_metadata.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "03",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8196204750001925,
+    "command": [
+      "python",
+      "${AC}/scripts/03_preprocess_fastq.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "04",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 4.459675003000029,
+    "command": [
+      "python",
+      "${AC}/scripts/04_profile_16s.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "05",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8661841530001766,
+    "command": [
+      "python",
+      "${AC}/scripts/05_profile_shotgun.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "06",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.7583876939997936,
+    "command": [
+      "python",
+      "${AC}/scripts/06_build_taxonomic_abundance.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "07",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8265273810002327,
+    "command": [
+      "python",
+      "${AC}/scripts/07_harmonize_profiles.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "08",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8359854700001961,
+    "command": [
+      "python",
+      "${AC}/scripts/08_define_comparisons.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "09",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8399607370001831,
+    "command": [
+      "python",
+      "${AC}/scripts/09_alpha_diversity.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "10",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8524123500001224,
+    "command": [
+      "python",
+      "${AC}/scripts/10_beta_diversity.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "11",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8600844490001691,
+    "command": [
+      "python",
+      "${AC}/scripts/11_alcohol_vs_health_M1.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "12",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8746096300001227,
+    "command": [
+      "python",
+      "${AC}/scripts/12_disease_comparisons_M1.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "13",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.7828586870000436,
+    "command": [
+      "python",
+      "${AC}/scripts/13_clinical_subset_M1.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "14",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.7934063860002425,
+    "command": [
+      "python",
+      "${AC}/scripts/14_clinical_interactions.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "15",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.7862110089999987,
+    "command": [
+      "python",
+      "${AC}/scripts/15_source_robustness.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "16",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.7734935879998375,
+    "command": [
+      "python",
+      "${AC}/scripts/16_functional_annotation.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "17",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8479017439999552,
+    "command": [
+      "python",
+      "${AC}/scripts/17_functional_comparisons.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "18",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8283746460001566,
+    "command": [
+      "python",
+      "${AC}/scripts/18_taxon_function_contributions.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "19",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8572581650000757,
+    "command": [
+      "python",
+      "${AC}/scripts/19_patient_patterns.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "20",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.7951515400000062,
+    "command": [
+      "python",
+      "${AC}/scripts/20_candidate_overlap.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "21",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8176941120000265,
+    "command": [
+      "python",
+      "${AC}/scripts/21_make_figures.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "22",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.8618896880002467,
+    "command": [
+      "python",
+      "${AC}/scripts/22_build_presentation.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "03",
+    "check": "scientific_replay",
+    "status": "BLOCKED",
+    "reason": "Original reads, databases and required profiling executables are not available in the supplied completed archives."
+  },
+  {
+    "module": "04",
+    "check": "scientific_replay",
+    "status": "BLOCKED",
+    "reason": "Original reads, databases and required profiling executables are not available in the supplied completed archives."
+  },
+  {
+    "module": "05",
+    "check": "scientific_replay",
+    "status": "BLOCKED",
+    "reason": "Original reads, databases and required profiling executables are not available in the supplied completed archives."
+  },
+  {
+    "module": "13",
+    "check": "scientific_replay",
+    "label": "subset_supplemented",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 3.2040602450001643,
+    "command": [
+      "python",
+      "${AC}/scripts/13_clinical_subset_M1.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/subset_supplemented",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/subset_supplemented.log"
+  },
+  {
+    "module": "13",
+    "check": "scientific_replay",
+    "label": "subset_original",
+    "status": "PASS",
+    "validation_mode": "RECOMPUTED",
+    "elapsed_seconds": 3.6627295650000633,
+    "command": [
+      "python",
+      "${AC}/scripts/13_clinical_subset_M1.py",
+      "--input-root",
+      "${M1}",
+      "--clinical-root",
+      "${CLIN}",
+      "--output-root",
+      "${VALIDATION_OUT}/full/subset_original",
+      "--scope",
+      "M1_clinical_complete",
+      "--overwrite"
+    ],
+    "log": "${VALIDATION_OUT}/full/subset_original.log"
+  }
+]

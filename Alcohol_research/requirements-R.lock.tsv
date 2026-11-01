@@ -1,0 +1,7 @@
+package	version	role
+R	4.4.2	runtime
+vegan	2.7.6	beta and dispersion
+cluster	2.1.8.3	PAM
+castor	NOT_RECOVERED	optional official mapper; absent in validation environment
+optparse	NOT_RECOVERED	optional official mapper; absent in validation environment
+stringr	NOT_RECOVERED	optional official mapper; version not established

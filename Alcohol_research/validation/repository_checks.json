@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "date_America_Chicago": "2026-11-01",
+  "scope": "Repository reorganization checks; distinct from supplied historical Biomni scientific coverage.",
+  "source_payload_integrity": {
+    "payloads": 145,
+    "mismatches": 0
+  },
+  "source_preservation": {
+    "implementation_files": 25,
+    "byte_identical": 23,
+    "help_or_error_text_only": [
+      "src/ac/inputs.py",
+      "src/ac/cli.py"
+    ],
+    "entrypoints_and_driver_byte_identical": 23,
+    "frozen_configuration_files_byte_identical": 6,
+    "numerical_method_changes": false
+  },
+  "static_checks": {
+    "python_files": 49,
+    "python_ast": "PASS",
+    "shell_files": 2,
+    "bash_syntax": "PASS",
+    "english_text_files": 88,
+    "chinese_character_matches": 0,
+    "local_document_links_verified": 23,
+    "existing_repository_links_verified": [
+      "AREK_database/01_preprocessing/README.md",
+      "AREK_database/01_preprocessing/docs/databases.md",
+      "AREK_database/01_preprocessing/docs/parameters.md",
+      "AREK_database/01_preprocessing/docs/steps.md",
+      "AREK_database/01_preprocessing/docs/user_guide.md",
+      "AREK_database/01_preprocessing/validation/README.md",
+      "AREK_database/README.md",
+      "LICENSE"
+    ]
+  },
+  "interface_checks": {
+    "passed": 9,
+    "checks": [
+      "fresh_external_primary_replay",
+      "overwrite_refused",
+      "verified_resume",
+      "explicit_overwrite",
+      "existing_node_dry_run_no_writes",
+      "dependency_dry_run",
+      "raw_preflight_03",
+      "raw_preflight_04",
+      "raw_preflight_05"
+    ]
+  },
+  "primary_M1_replay": {
+    "status": "PASS",
+    "summary": {
+      "outcome": "taxa",
+      "comparison": "01_Alcohol_vs_Health",
+      "scope": "M1_all",
+      "panel": "gut__full_source_reference",
+      "coverage": "base",
+      "specimens": {
+        "Health": 2258,
+        "Alcohol": 1117
+      },
+      "fixed_family": 360,
+      "full_reference_features": 3201,
+      "estimable": 182,
+      "candidates": 39,
+      "positive": 15,
+      "negative": 24,
+      "numerical_reference": "External original Biomni primary reference table"
+    },
+    "numerical_comparison": [
+      {
+        "column": "beta",
+        "status": "PASS",
+        "rtol": "1.9999999999999999e-07",
+        "atol": "2.0000000000000001e-09",
+        "max_absolute_error": "1.7763568394002505e-15"
+      },
+      {
+        "column": "SE",
+        "status": "PASS",
+        "rtol": "1.9999999999999999e-07",
+        "atol": "2.0000000000000001e-09",
+        "max_absolute_error": "1.3322676295501878e-15"
+      },
+      {
+        "column": "CI_low",
+        "status": "PASS",
+        "rtol": "1.9999999999999999e-07",
+        "atol": "2.0000000000000001e-09",
+        "max_absolute_error": "3.5527136788005009e-15"
+      },
+      {
+        "column": "CI_high",
+        "status": "PASS",
+        "rtol": "1.9999999999999999e-07",
+        "atol": "2.0000000000000001e-09",
+        "max_absolute_error": "1.7763568394002505e-15"
+      },
+      {
+        "column": "raw_p",
+        "status": "PASS",
+        "rtol": "1.9999999999999999e-07",
+        "atol": "2.0000000000000001e-09",
+        "max_absolute_error": "5.5511151231257827e-16"
+      },
+      {
+        "column": "BH_q",
+        "status": "PASS",
+        "rtol": "1e-10",
+        "atol": "9.9999999999999998e-13",
+        "max_absolute_error": "1.1102230246251565e-15"
+      },
+      {
+        "column": "full_reference_BH_q",
+        "status": "PASS",
+        "rtol": "1e-10",
+        "atol": "9.9999999999999998e-13",
+        "max_absolute_error": "1.7763568394002505e-15"
+      }
+    ]
+  },
+  "current_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "statsmodels": "NOT_INSTALLED",
+      "matplotlib": "3.10.8",
+      "seaborn": "0.13.2",
+      "beautifulsoup4": "NOT_INSTALLED",
+      "pytest": "NOT_INSTALLED"
+    },
+    "Rscript": false
+  },
+  "not_rerun": [
+    "Full 406-node clinical replay",
+    "R Beta/PAM",
+    "Full functional replay",
+    "Original raw-read chains",
+    "Official FAPROTAX mapper",
+    "Clean installation of original pinned environments",
+    "pytest/statsmodels cross-checks: dependencies unavailable"
+  ],
+  "github_upload_performed": false
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "adapter": "amplicon_v5",
+    "origin": "RECOVERY/payload/032293",
+    "actual_route": "Mate layout/length QC; QIIME 2 import; true-pair VSEARCH merging or selected biological mate; dereplication; 0.97 de novo OTU clustering; uchime-denovo; SILVA classifier",
+    "classifier_filename": "silva-138-99-nb-classifier.qza",
+    "primer_trim": "Not explicitly implemented by this recovered adapter; do not invent primers or trimming.",
+    "settings": {
+      "VSEARCH_PERC_IDENTITY": 0.97,
+      "MIN_MEDIAN_LEN": 100,
+      "QC_READS_PER_FILE": 3000
+    },
+    "tool_versions": "Exact original QIIME 2/plugin build not recovered from these scripts.",
+    "database_hash": "NOT_AVAILABLE",
+    "execution_status": "BLOCKED"
+  },
+  {
+    "adapter": "shotgun_v2",
+    "origin": "RECOVERY/payload/032288",
+    "project": "PRJNA613834",
+    "actual_route": "fastp PE adapter detection; Bowtie2 hg38 very-sensitive host depletion; samtools unmapped pairs; Kraken2 paired; Bracken S/G/F/P",
+    "settings": {
+      "READ_LEN": 150,
+      "BRACKEN_THRESHOLD": 10,
+      "MIN_LENGTH": 50,
+      "FASTP_COMPRESSION": 1,
+      "FASTP_CORRECTION": 0,
+      "FASTP_DISABLE_DUP_EVAL": 1,
+      "SKIP_HOST_REMOVAL": 0
+    },
+    "tool_versions": "Exact original fastp/Bowtie2/Kraken2/Bracken versions not recovered from these scripts.",
+    "database_hash": "NOT_AVAILABLE",
+    "execution_status": "BLOCKED"
+  },
+  {
+    "adapter": "author_or_database_profile",
+    "actual_route": "Original abundance objects through explicit scale, rank and ID mapping.",
+    "FASTQ_support": "Not implied by a genus table.",
+    "execution_status": "AVAILABLE_PROFILE_STAGE"
+  }
+]

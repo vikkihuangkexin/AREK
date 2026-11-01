@@ -1,0 +1,19 @@
+source	source_sha256	current_file	adaptation
+M1/reproducibility/code/models.py	2ad523ae1d7ffca0ed6a5ac68b2f981867cb1b421a24c28e318b52208fd4fe25	src/ac/m1.py	Preserved M1 gates and design; shared robust covariance; unused wild bootstrap excluded.
+CLIN/reproducibility/interaction_engine.py	9f2fc784eb2ab1a7400bc4e1a4602b25680cdcf41b047b902433ff16045b5a1a	src/ac/interaction.py	Original interaction design, estimability and contrasts; shared covariance kernel.
+M1/reproducibility/code/beta_core.py	e1300fe1868dabcaacb010baae846157804f5e7d070087749a6076f2781bfb81	src/ac/beta_kernel.py	Retained general and commuting restricted-permutation kernels; obsolete CLI omitted.
+M1/reproducibility/code/complete_beta.py	3dc5b76630bd4296a2299a9550815e7aa265dc3f5f2fcbde7c764f0f5508e011	src/ac/beta.py	Separate read-only input/output roots; fresh output recomputation; original RNG seeds pinned where relevant.
+M1/reproducibility/code/complete_patterns.py	d146cce8130fe592258915b89823552284d5569c82edcdc75706a10cc5ad2bd0	src/ac/patterns.py	Separate read-only input/output roots; fresh output recomputation; original RNG seeds pinned where relevant.
+M1/reproducibility/code/complete_source_robustness.py	c17cb0523f4fe5006b35ec8ee4b8e0d37a2ee1cce5e255bea8edb492f7cbb6c2	src/ac/sources.py	Separate read-only input/output roots; fresh output recomputation; original RNG seeds pinned where relevant.
+M1/reproducibility/code/beta_completion.R	8e5b0f0ca11390955d2a2912815f8ebc3a5f5eb1fc132b34b3273da19fdec116	src/ac/beta_completion.R	Original executed R algorithm, retained without scientific changes.
+M1/reproducibility/code/pattern_completion.R	53a110d0dc87e27240ba4301bbd4ffea38c2c54eb88f24fb6de36ccf9f3fd10b	src/ac/pattern_completion.R	Original executed R algorithm, retained without scientific changes.
+CLIN/reproducibility/run_models.py	de018f26941ef8974d0a2c5a679ab0f8c71682043e10caf19f734f77e115940b	src/ac/clinical.py	Real per-node engine with full registry; filtered joint BH withheld unless the complete variable family is present.
+RECOVERY/payload/032293/run_qiime2_mate_aware_vsearch_prjna_v5.sh	6269e75d3c81238428e328c1ed43886fe53361bc8ebf3a8dcb530d7954f61d52	src/ac/amplicon_v5.sh	Original actual route; mandatory portable path configuration and optional amplicon QC stopping point.
+RECOVERY/payload/032288/run_PRJNA613834_metagenome_taxonomy_v2.sh	e69003201622b836068bfcbcefe7cbfdc2cd3fc6de572977086589656f123ccf	src/ac/shotgun_v2.sh	Original actual route; mandatory portable path configuration and optional amplicon QC stopping point.
+V3/code/prepare.py	b36f4953c5efcb1c60a138dc3e787fbd94dd5d55b6a183acefc2f0fd96fbb335	src/ac/early.py	Preserved exact domain/family/genus anchors and frozen source/panel support; no panel reselection.
+V3/code/diversity_v3.py	88579f7847617a78676f98cb500182add3cc5038963b811187691be15ae4069b	src/ac/groups.py	Original source-specific full-composition alpha definition; source TSS closed within specimen.
+CLIN/reproducibility/inventory.py	d360cfdcdc0616f0441cee78ce040229a5fd72ce08a37b451b8d409ebc6aca93	src/ac/early.py	Replay accepted exact-ID evidence and conflict decisions; no new semantic decisions.
+V2/code/faprotax_prepare.py	fe1c356af5f49b905f56b4bd5a8ca30b42463216637a9ca4c1d37ee92edd5dc6	src/ac/functions.py	Accepted exact genus annotation input; no fuzzy or higher-rank rescue.
+V2/code/faprotax_analyze.py	5b6b818ad5b93fb7778b02cf9095dd6b792fa37f56eac0b2fa1f180231d35294	src/ac/functions.py	Preserved accepted genus placements and original abundance contribution scale.
+M1/reproducibility/code/evidence_beta_patterns.py	5307ee6f54fda21afa8d9b037bbea1000f3268858e58490e8f0d2e4456f230c1	src/ac/supplemented.py	Original supplemented clinical-complete beta and pattern branches.
+CLIN/reproducibility/build_deck.py	68105f67c86f121044e7d2451bd76e228925987d77d4419748b002521ef4c8c9	src/ac/presentation.py	Preserved existing narrative, 16 slide IDs, editable element IDs and packed runtime; portable offline assets.

@@ -1,0 +1,262 @@
+[
+  {
+    "module": "01",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5182091510000646,
+    "command": [
+      "python",
+      "${AC}/scripts/01_audit_inputs.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "02",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5311877160002041,
+    "command": [
+      "python",
+      "${AC}/scripts/02_collect_harmonize_metadata.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "03",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5349646179997762,
+    "command": [
+      "python",
+      "${AC}/scripts/03_preprocess_fastq.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "04",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.49488566100035314,
+    "command": [
+      "python",
+      "${AC}/scripts/04_profile_16s.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "05",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5084230249999564,
+    "command": [
+      "python",
+      "${AC}/scripts/05_profile_shotgun.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "06",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5409526659996118,
+    "command": [
+      "python",
+      "${AC}/scripts/06_build_taxonomic_abundance.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "07",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.521308966000106,
+    "command": [
+      "python",
+      "${AC}/scripts/07_harmonize_profiles.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "08",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5343701740002871,
+    "command": [
+      "python",
+      "${AC}/scripts/08_define_comparisons.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "09",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5387076520000846,
+    "command": [
+      "python",
+      "${AC}/scripts/09_alpha_diversity.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "10",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.6262642100000448,
+    "command": [
+      "python",
+      "${AC}/scripts/10_beta_diversity.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "11",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5197948260001795,
+    "command": [
+      "python",
+      "${AC}/scripts/11_alcohol_vs_health_M1.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "12",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.49718046599991794,
+    "command": [
+      "python",
+      "${AC}/scripts/12_disease_comparisons_M1.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "13",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5150042989998838,
+    "command": [
+      "python",
+      "${AC}/scripts/13_clinical_subset_M1.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "14",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5323576729997512,
+    "command": [
+      "python",
+      "${AC}/scripts/14_clinical_interactions.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "15",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5111395629996878,
+    "command": [
+      "python",
+      "${AC}/scripts/15_source_robustness.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "16",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5126326350000454,
+    "command": [
+      "python",
+      "${AC}/scripts/16_functional_annotation.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "17",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5135460060000696,
+    "command": [
+      "python",
+      "${AC}/scripts/17_functional_comparisons.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "18",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.6008092430001852,
+    "command": [
+      "python",
+      "${AC}/scripts/18_taxon_function_contributions.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "19",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5353255340000942,
+    "command": [
+      "python",
+      "${AC}/scripts/19_patient_patterns.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "20",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5568561679997401,
+    "command": [
+      "python",
+      "${AC}/scripts/20_candidate_overlap.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "21",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5488598089996231,
+    "command": [
+      "python",
+      "${AC}/scripts/21_make_figures.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "22",
+    "check": "syntax_import_help",
+    "status": "PASS",
+    "elapsed_seconds": 0.5740542029998323,
+    "command": [
+      "python",
+      "${AC}/scripts/22_build_presentation.py",
+      "--help"
+    ]
+  },
+  {
+    "module": "03",
+    "check": "scientific_replay",
+    "status": "BLOCKED",
+    "reason": "Original reads, databases and required profiling executables are not available in the supplied completed archives."
+  },
+  {
+    "module": "04",
+    "check": "scientific_replay",
+    "status": "BLOCKED",
+    "reason": "Original reads, databases and required profiling executables are not available in the supplied completed archives."
+  },
+  {
+    "module": "05",
+    "check": "scientific_replay",
+    "status": "BLOCKED",
+    "reason": "Original reads, databases and required profiling executables are not available in the supplied completed archives."
+  }
+]

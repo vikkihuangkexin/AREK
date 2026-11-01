@@ -1,0 +1,63 @@
+{
+  "cohort_specimens": 4603,
+  "Studies": 28,
+  "q_screen": 0.2,
+  "nuisance": [
+    "Study",
+    "analysis_set",
+    "assay_analysis",
+    "material_analysis",
+    "technical_batch"
+  ],
+  "minimum_working_units_per_arm": 5,
+  "minimum_residual_df": 10,
+  "minimum_CR1_clusters": 20,
+  "rank_tolerance": 1e-09,
+  "clinical_estimability_tolerance": 1e-07,
+  "pseudocount": 1e-06,
+  "alpha_full_source": "Original source-specific composition, closed within specimen, not canonical pooled projection",
+  "alpha_common_panel": "Closed within common panel",
+  "alpha_clinical_scaling": {
+    "age": {
+      "center": 50,
+      "scale": 10
+    },
+    "BMI": {
+      "center": 25,
+      "scale": 5
+    },
+    "sex_reference": "female"
+  },
+  "beta": {
+    "permutations": 9999,
+    "blocks": [
+      "Study",
+      "analysis_set",
+      "assay_analysis",
+      "material_analysis"
+    ],
+    "observed": "actual vegan marginal F",
+    "dispersion": "spatial median, bias adjusted, Bray Lingoes"
+  },
+  "PAM": {
+    "K": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "bootstrap_attempts": 200,
+    "min_valid": 190,
+    "min_size": 20,
+    "min_fraction": 0.05,
+    "min_silhouette": 0.25,
+    "min_mean_Jaccard": 0.75,
+    "source_NMI_exclusion": 0.8,
+    "K_selection": "smallest passing K within 0.01 of maximum passing silhouette"
+  },
+  "archive_hashes": {
+    "Alcohol_M1_Completed_FULL.zip": "0b55cee7a6edda4958a5bde5f48a65cca4d9532c356df24f1f9d4e041bb54fba",
+    "Clinical_Interactions_and_Paper_PPT_FULL.zip": "24bea2b9bbdaf5dab2a81ebc60698ba79c45f4449b682d6c3cca8bdf1cea2e0f"
+  }
+}

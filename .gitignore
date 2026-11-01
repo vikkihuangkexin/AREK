@@ -5,3 +5,12 @@ __pycache__/
 AREK_database/**/outputs/
 AREK_database/**/databases/
 AREK_database/**/validation/work/
+
+# Alcohol research inputs and generated outputs
+Alcohol_research/run/
+Alcohol_research/runs/
+Alcohol_research/outputs/
+Alcohol_research/data/
+Alcohol_research/demo/
+Alcohol_research/.pytest_cache/
+Alcohol_research/validation/work/

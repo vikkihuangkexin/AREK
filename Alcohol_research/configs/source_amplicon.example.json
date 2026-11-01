@@ -1,0 +1,11 @@
+{
+  "adapter": "amplicon_v5",
+  "project": "PRJNA867698",
+  "RAW_ROOT": "external/raw/human",
+  "RESULT_ROOT": "run/04",
+  "CLASSIFIER": "external/db/silva-138-99-nb-classifier.qza",
+  "settings": {
+    "THREADS": 1,
+    "FORCE": 0
+  }
+}

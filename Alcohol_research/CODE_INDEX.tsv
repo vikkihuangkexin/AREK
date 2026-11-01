@@ -1,0 +1,23 @@
+module	entry_point	implementation	driver_dependencies	validation_status	validated_work	boundary
+01	scripts/01_audit_inputs.py	src/ac/early.py:audit	none	PASS	Schema/hash checks and population identity recomputed.	Raw-stage execution not validated.
+02	scripts/02_collect_harmonize_metadata.py	src/ac/early.py:harmonize_metadata	none	PASS	Accepted exact-ID evidence reconstructed; technical metadata reused/hash-checked.	No live metadata acquisition or group fill.
+03	scripts/03_preprocess_fastq.py	src/ac/raw.py; amplicon_v5.sh; shotgun_v2.sh	none	BLOCKED	Included recovered QC adapters; syntax and expected blocked preflight tested.	Reads, matching databases and complete tool environment unavailable.
+04	scripts/04_profile_16s.py	src/ac/raw.py; amplicon_v5.sh	none	BLOCKED	Included real mate-aware QIIME2/VSEARCH OTU implementation.	No original raw-read execution.
+05	scripts/05_profile_shotgun.py	src/ac/raw.py; shotgun_v2.sh	none	BLOCKED	Included real fastp/host/Kraken2/Bracken implementation.	No original raw-read execution.
+06	scripts/06_build_taxonomic_abundance.py	src/ac/abundance.py	none	PASS_PARTIAL	Frozen genus abundance exported/hash-checked.	Optional rank aggregation not exhaustively replayed.
+07	scripts/07_harmonize_profiles.py	src/ac/early.py:profiles; stats.py:clr	01	PASS	V3 source canonical integration and CLR rebuilt; frozen selection retained.	No raw-read profiling.
+08	scripts/08_define_comparisons.py	src/ac/early.py:comparisons	01	PASS	Frozen memberships retained; population and availability counts recomputed.	Labels not re-inferred.
+09	scripts/09_alpha_diversity.py	src/ac/groups.py:alpha; m1.py; stats.py	07,08	PASS	V3 source-composition alpha and primary M1 recomputed.	Without V3 measures are reused; other nodes not exhaustively replayed.
+10	scripts/10_beta_diversity.py	src/ac/beta.py; beta_kernel.py; beta_completion.R; supplemented.py	07,08	PASS_SPECIFIED_NODES	Primary shared-7 actual 9999-permutation beta; supplemented 16S gate preserved.	Other panels/scopes NOT_RUN; supplemented gate has zero permutations.
+11	scripts/11_alcohol_vs_health_M1.py	src/ac/groups.py; m1.py; stats.py	07,08	PASS	Primary full 3201 reference rows refitted; selected360/estimable182/candidates39.	Frozen model inputs reused, not raw reads.
+12	scripts/12_disease_comparisons_M1.py	src/ac/groups.py; m1.py; stats.py	07,08	PASS_SPECIFIED_NODES	All four primary gut disease nodes refitted.	Other panel/scope combinations NOT_RUN.
+13	scripts/13_clinical_subset_M1.py	src/ac/groups.py; m1.py; stats.py	07,08	PASS_SPECIFIED_NODES	Original and supplemented primary gut complete-case M1 refitted.	Not a clinical-adjusted model.
+14	scripts/14_clinical_interactions.py	src/ac/clinical.py; interaction.py; stats.py	01	PASS	All406 clinical nodes and independent sex branch refitted.	Clinical input evidence is frozen; partial joint BH withheld.
+15	scripts/15_source_robustness.py	src/ac/sources.py; m1.py	01	PASS_SPECIFIED_NODES	Primary gut taxa/functions withinStudy/LOSO robustness refitted.	Other disease/panel/scope nodes NOT_RUN.
+16	scripts/16_functional_annotation.py	src/ac/functions.py:annotation	none	PASS_PARTIAL	Accepted official mapper states reused/hash-checked; source contributions freshly computed.	Official mapper execution NOT_RUN; optional package pins missing.
+17	scripts/17_functional_comparisons.py	src/ac/groups.py; clinical.py; interaction.py	01	PASS_SPECIFIED_NODES	Primary base/global/trait function M1 and sex/function clinical node refitted.	Independent-variable joint BH withheld; other new branches NOT_RUN.
+18	scripts/18_taxon_function_contributions.py	src/ac/functions.py:contributions	01	PASS	Original-scale candidate per-ID contributions freshly summed and checked.	Annotation is inferred, not measured function.
+19	scripts/19_patient_patterns.py	src/ac/patterns.py; pattern_completion.R; supplemented.py	07,08	PASS_SPECIFIED_NODES	Original ALD/Alcohol shared-7 PAM/bootstraps replayed; supplemented18-unit gate preserved.	Supplemented gate has zero bootstrap attempts; other nodes NOT_RUN.
+20	scripts/20_candidate_overlap.py	src/ac/overlap.py	01	PASS	Canonical overlaps and counts recomputed from frozen result tables.	Does not refit source statistics.
+21	scripts/21_make_figures.py	src/ac/figures.py	01	PASS	Eight principal SVG/data pairs freshly plotted from actual frozen results.	No statistical refit or narrative revision.
+22	scripts/22_build_presentation.py	src/ac/presentation.py	01	PASS	HTML reconstructed preserving16slides,565editableIDs,narrative/runtime/assets.	No standalone PPTX/PDF; original narrative reused unchanged.
