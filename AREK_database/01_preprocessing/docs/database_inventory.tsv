@@ -1,14 +1,14 @@
 database	recovered_version	filename	bytes	sha256
 SILVA	138 99%, trained 2024.5	silva-138-99-nb-classifier.qza	218245868	c08a1aa4d56b449b511f7215543a43249ae9c54b57491428a7e5548a62613616
-Kraken2/Bracken	build identity/source URL 未恢复; files dated 2022-12-05	opts.k2d	64	5016e1aa7c936f878434e2c5ef074de31b07e2a050409535ed709d5b76398883
-Kraken2/Bracken	build identity/source URL 未恢复; files dated 2022-12-05	taxo.k2d	3113006	fbfd6fa9234469f24f6e500c95d9e5a74e3c3c86a493ca5ae22ea667afbd1f1b
-Kraken2/Bracken	build identity/source URL 未恢复; files dated 2022-12-05	hash.k2d	8000000032	7e587176fea2c84e3aaeb08b001ea035ff3a302ca3cf4fc75a352be5e1def20a
-Kraken2/Bracken	build identity/source URL 未恢复; files dated 2022-12-05	database150mers.kmer_distrib	4241623	4f0b54cc0e5cdaf7aac846cf93f63e8c862ffaf4501a11f356b096f371ba170c
-Kraken2/Bracken	build identity/source URL 未恢复; files dated 2022-12-05	inspect.txt	2603114	21a3d840797cf08fbcf151e5d5aca097f272503ad641765f96022825f02a3005
-host Bowtie2	hg38; exact download snapshot 未恢复	hg38.1.bt2	1020663364	5ae0be47906722afee4c40b8cc6e0a8ad477b364f2f4546f115e2d8b544b42c8
-host Bowtie2	hg38; exact download snapshot 未恢复	hg38.2.bt2	762328952	ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d
-host Bowtie2	hg38; exact download snapshot 未恢复	hg38.3.bt2	15065	d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5
-host Bowtie2	hg38; exact download snapshot 未恢复	hg38.4.bt2	762328946	2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413
-host Bowtie2	hg38; exact download snapshot 未恢复	hg38.fa	3273481150	5be01555d98347fdb3714dc84c6f77c9d8bc774adcf32c6f7a8fa06f5baf5e51
-host Bowtie2	hg38; exact download snapshot 未恢复	hg38.rev.1.bt2	1020663364	b15349483226decda85f93e2da0555fafd3e2d3792b8fd7bd87bb5e4d7dc55d2
-host Bowtie2	hg38; exact download snapshot 未恢复	hg38.rev.2.bt2	762328952	76460e8b3f046d57bb65ba6e336c2f1eed82c1bf3e60a56caffde74629fa19a4
+Kraken2/Bracken	build identity/source URL not recovered; files dated 2022-12-05	opts.k2d	64	5016e1aa7c936f878434e2c5ef074de31b07e2a050409535ed709d5b76398883
+Kraken2/Bracken	build identity/source URL not recovered; files dated 2022-12-05	taxo.k2d	3113006	fbfd6fa9234469f24f6e500c95d9e5a74e3c3c86a493ca5ae22ea667afbd1f1b
+Kraken2/Bracken	build identity/source URL not recovered; files dated 2022-12-05	hash.k2d	8000000032	7e587176fea2c84e3aaeb08b001ea035ff3a302ca3cf4fc75a352be5e1def20a
+Kraken2/Bracken	build identity/source URL not recovered; files dated 2022-12-05	database150mers.kmer_distrib	4241623	4f0b54cc0e5cdaf7aac846cf93f63e8c862ffaf4501a11f356b096f371ba170c
+Kraken2/Bracken	build identity/source URL not recovered; files dated 2022-12-05	inspect.txt	2603114	21a3d840797cf08fbcf151e5d5aca097f272503ad641765f96022825f02a3005
+host Bowtie2	hg38; exact download snapshot not recovered	hg38.1.bt2	1020663364	5ae0be47906722afee4c40b8cc6e0a8ad477b364f2f4546f115e2d8b544b42c8
+host Bowtie2	hg38; exact download snapshot not recovered	hg38.2.bt2	762328952	ee1502737c1fe27706a91179584f99146102da7eac08ff5f76e9657476af619d
+host Bowtie2	hg38; exact download snapshot not recovered	hg38.3.bt2	15065	d7ecd66f14894242cb5153471028bb4f94bebd920c2c025c08ec24bcb13e6df5
+host Bowtie2	hg38; exact download snapshot not recovered	hg38.4.bt2	762328946	2f5112d9a0c0855eea028ea4181e2af9dd261cdadac3eff541415dd5eb4ea413
+host Bowtie2	hg38; exact download snapshot not recovered	hg38.fa	3273481150	5be01555d98347fdb3714dc84c6f77c9d8bc774adcf32c6f7a8fa06f5baf5e51
+host Bowtie2	hg38; exact download snapshot not recovered	hg38.rev.1.bt2	1020663364	b15349483226decda85f93e2da0555fafd3e2d3792b8fd7bd87bb5e4d7dc55d2
+host Bowtie2	hg38; exact download snapshot not recovered	hg38.rev.2.bt2	762328952	76460e8b3f046d57bb65ba6e336c2f1eed82c1bf3e60a56caffde74629fa19a4

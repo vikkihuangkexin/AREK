@@ -5,10 +5,16 @@
   "date_America_Chicago": "2026-10-31",
   "module_root": "AREK_database/01_preprocessing",
   "source_mapping": "file_relocation.tsv (retained source files only)",
-  "method_changes": "none; canonical computation sources copied byte-for-byte",
+  "method_changes": "No numerical method changes; language-only shell comment/message translation and equivalent JSON escaping are recorded as adaptations.",
   "validation_program_changes": "write new evidence to supplied work root instead of tracked source tree",
   "excluded": "All historical logs, checkpoints, validation result snapshots, cohort/result inventories, intermediate QZA/BIOM files and project scans remain solely in the original input archive.",
   "source_files_retained": 66,
   "source_files_not_uploaded": 781,
-  "documentation_changes": "Source execution paths omitted from database inventory and script map; all legacy route paths updated."
+  "documentation_changes": "English documentation throughout; current language-suffixed documents renamed; internal links and provenance descriptions updated. Historical archive identities and original hashes preserved.",
+  "english_language_update": {
+    "base_commit": "754945546ebb4b1968f235459f14506c9d379ccc",
+    "scope": "Repository and module READMEs, full user guide, supporting documentation, source comments/messages, reference/source inventories, and current manifests.",
+    "configuration_behavior": "Decoded historical.json is identical to the base version; legacy missing-group aliases use Unicode escapes.",
+    "computation": "Python and R computation sources, thresholds, environment locks, and example data preserved byte-for-byte; shell changes restricted to comments and English error messages."
+  }
 }

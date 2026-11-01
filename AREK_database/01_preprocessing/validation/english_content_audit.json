@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "base_commit": "754945546ebb4b1968f235459f14506c9d379ccc",
+  "repository_text_files_scanned": 77,
+  "chinese_character_matches": 0,
+  "third_party_archive_text_members_scanned": 161,
+  "gzip_fastq_fixtures_scanned": 8,
+  "local_markdown_links_verified": 48,
+  "python_and_R_sources_byte_identical": 19,
+  "shell_files_checked": 6,
+  "shell_files_with_comment_or_message_only_changes": 3,
+  "decoded_default_configuration_identical": true,
+  "environment_and_example_files_byte_identical": 27,
+  "full_FASTQ_and_R_statistical_chains_rerun": false
+}

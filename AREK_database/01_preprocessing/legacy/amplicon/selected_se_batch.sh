@@ -62,7 +62,7 @@ if [[ ! -f "$CLASSIFIER" ]]; then
 fi
 
 if ! qiime --help | grep -q "vsearch"; then
-  echo "[ERROR] 当前 QIIME2 环境没有 q2-vsearch 插件。" >&2
+  echo "[ERROR] The active QIIME2 environment is missing the q2-vsearch plugin." >&2
   exit 1
 fi
 

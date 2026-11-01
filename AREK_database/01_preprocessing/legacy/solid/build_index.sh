@@ -5,7 +5,7 @@ set -euo pipefail
 if [[ "${AREK_LEGACY_SOURCE_MODE:-}" != "isolated_research" ]]; then echo "Recovered historical entry; use canonical run_pipeline.py. To inspect native batching/diagnostics in a NEW output directory set AREK_LEGACY_SOURCE_MODE=isolated_research." >&2; exit 2; fi
 
 
-# 避免旧环境动态库污染
+# Prevent shared-library contamination from the previous environment.
 unset LD_LIBRARY_PATH
 
 BFAST_HOME="${BFAST_HOME}"

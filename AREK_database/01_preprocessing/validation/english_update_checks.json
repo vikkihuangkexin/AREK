@@ -1,0 +1,71 @@
+{
+  "date_America_Chicago": "2026-10-31",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "source_bytes_preserved",
+      "status": "passed",
+      "files": 51
+    },
+    {
+      "check": "python_and_shell_syntax",
+      "status": "passed",
+      "python_files": 17,
+      "shell_files": 6
+    },
+    {
+      "check": "config_and_manifest_relative_paths",
+      "status": "passed",
+      "configs": 6,
+      "real_pe_samples": 4
+    },
+    {
+      "check": "cli_help_from_external_working_directory",
+      "status": "passed",
+      "commands": 8
+    },
+    {
+      "check": "dry_run_all_routes_no_writes",
+      "status": "passed",
+      "configurations": 5
+    },
+    {
+      "check": "real_fastq_scan",
+      "status": "passed",
+      "paired_samples": 4
+    },
+    {
+      "check": "matrix_aggregation_and_independent_numerics",
+      "status": "passed",
+      "level": "Phylum",
+      "samples": 4,
+      "features": 21,
+      "absolute_tolerance": 1e-12
+    },
+    {
+      "check": "matrix_aggregation_and_independent_numerics",
+      "status": "passed",
+      "level": "Genus",
+      "samples": 4,
+      "features": 174,
+      "absolute_tolerance": 1e-12
+    },
+    {
+      "check": "relative_only_contract",
+      "status": "passed",
+      "no_counts": true,
+      "Chao1": "NA"
+    }
+  ],
+  "external_tools_available": {
+    "Rscript": false,
+    "qiime": false,
+    "kraken2": false
+  },
+  "not_rerun": [
+    "FASTQ external-tool chains",
+    "R statistical tests",
+    "full study cohorts",
+    "clean environment installation"
+  ]
+}

@@ -16,7 +16,7 @@ MIN_MEDIAN_LEN="${MIN_MEDIAN_LEN:-100}"
 QC_READS_PER_FILE="${QC_READS_PER_FILE:-3000}"
 FORCE="${FORCE:-0}"
 
-# 如果 paired merge 因 overlap 不足失败，可设 FORCE_SINGLE_BEST_MATE=1，所有 paired 样本统一取长端 single-end
+# If paired merging fails due to insufficient overlap, set FORCE_SINGLE_BEST_MATE=1 to use the longer mate as single-end input for all paired samples.
 FORCE_SINGLE_BEST_MATE="${FORCE_SINGLE_BEST_MATE:-0}"
 
 PROJECT_DIR="${RAW_ROOT}/${PROJECT}"
@@ -48,7 +48,7 @@ if [[ ! -f "$CLASSIFIER" ]]; then
 fi
 
 if ! qiime vsearch --help >/dev/null 2>&1; then
-  echo "[ERROR] 当前 QIIME2 环境没有 q2-vsearch 插件。请先安装 q2-vsearch。" >&2
+  echo "[ERROR] The active QIIME2 environment is missing q2-vsearch. Install the plugin before continuing." >&2
   exit 1
 fi
 

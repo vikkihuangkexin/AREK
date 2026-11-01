@@ -1,27 +1,27 @@
-# AREK_database
+# AREK database code
 
-AREK 数据库的代码根目录。按“数据库建设阶段 → 调度层 / 算法层 / 运行资源 / 文档与验证”组织，后续代码作为同级编号模块加入。
+This directory contains the code for constructing and analyzing the AREK database. Each numbered module represents a major processing stage and contains its workflow, algorithms, resources, documentation, and validation tools.
 
-## 当前模块
+## Available modules
 
-| 编号 | 目录 | 输入 | 输出 | 状态 |
+| Stage | Directory | Inputs | Outputs | Status |
 | --- | --- | --- | --- | --- |
-| 01 | [01_preprocessing/](01_preprocessing/README.md) | 明确样本映射的 FASTQ，或 feature / taxon 矩阵 | 分类层级丰度、多样性、统计表、图和执行记录 | 已整理 |
+| 01 | [01_preprocessing](01_preprocessing/README.md) | Explicitly mapped FASTQ reads or feature/taxon matrices | Taxonomic abundance, diversity, statistics, figures, and execution records | Available |
 
-后续模块可继续使用 `02_<module>/`、`03_<module>/` 的命名。当前不创建空模块，也不将功能预测、差异分析、疾病建模或网页服务写成已有功能。
+Future modules can use names such as `02_<module>/` and `03_<module>/`. Functional prediction, differential abundance, disease modeling, and web services are outside the current module's scope.
 
-## 层次约定
+## Module layout
 
-| 层次 | 位置 | 职责 |
-| --- | --- | --- |
-| 数据库阶段 | `01_preprocessing/` 等 | 一个主要处理阶段的完整代码与说明 |
-| 用户入口 | 模块内 `run_pipeline.py`、`README.md` | 使用方法、路由选择、执行与续跑 |
-| 调度层 | `workflow/` | 配置、输入检查、外部工具命令、日志与 checkpoint |
-| 计算层 | `scripts/` | 当前正式流程调用的计算模块 |
-| 运行资源 | `config/`、`envs/`、`examples/` | 参数、依赖锁定和小样本示例 |
-| 文档与核验 | `docs/`、`validation/` | 输入输出契约、来源记录和可执行检查 |
-| 独立历史支路 | `legacy/` | 特定研究或历史入口，明确标注支持范围 |
+| Location | Responsibility |
+| --- | --- |
+| `01_preprocessing/` | One complete database processing stage |
+| `run_pipeline.py`, `README.md` | User entry point and quick start |
+| `workflow/` | Configuration, input checks, external commands, logs, and checkpoints |
+| `scripts/` | Computational modules used by the main workflow |
+| `config/`, `envs/`, `examples/` | Parameters, dependency locks, and small verification inputs |
+| `docs/`, `validation/` | Data contracts, source records, documentation, and executable checks |
+| `legacy/` | Standalone historical branches with explicitly documented limits |
 
-输出路径通过命令行指定，生产数据和大型参考库放在仓库外。后续模块应读取已明确单位、分类层级和样本身份的表，并记录来源；不同研究的 OTU ID 不直接视为同一 feature。
+Specify output locations on the command line. Keep production datasets and large reference databases outside the repository. Downstream modules should consume verified outputs with explicit units, taxonomic ranks, sample identities, and provenance. OTU identifiers from different studies do not establish shared feature identity.
 
-数据库代码和未来的网页前后端可分别管理，避免把统计脚本与应用部署代码混在一起。
+Database analysis code and future web application code can be maintained separately.
